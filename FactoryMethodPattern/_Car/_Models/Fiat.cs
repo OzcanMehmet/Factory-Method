@@ -8,11 +8,32 @@ namespace FactoryMethodPattern._Car
 {
     class Fiat : ICar
     {
-        public Fiat(double value) : base(value)
+        public Fiat()
         {
-            Logo = "Bmw";
-            CarName = "BMW";
+            Logo = "Fiat";
+            CarName = "Fiat";
+            Marketvalue = 5000;
         }
 
+        public string CarName
+        {
+            get;
+
+            set;
+        }
+
+        public string Logo
+        {
+            get;
+
+            set;
+        }
+
+        public double Marketvalue
+        {
+            get;
+
+            set;
+        }
     }
 }

@@ -14,8 +14,8 @@ namespace FactoryMethodPattern._Factory
         {
             switch(Type)
             {
-                case CarType.Bmw :   return new Bmw(500);
-                case CarType.Fiat:   return new Fiat(200);
+                case CarType.Bmw :   return new Bmw();
+                case CarType.Fiat:   return new Fiat();
                 default          :   return null;
             }
         }

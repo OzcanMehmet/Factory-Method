@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace FactoryMethodPattern
 {
-    abstract class ICar
+    interface ICar
     {
-        public  ICar(double value)
-        {
-            Marketvalue = value;
-        }
-        public             double   Marketvalue { get; protected set; }
-        public             string   CarName     { get; protected set; }
-        public             string   Logo        { get; protected set; }
+        double   Marketvalue { get; set; }
+        string   CarName     { get; set; }
+        string   Logo        { get; set; }
         
 
     }
